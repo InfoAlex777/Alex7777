@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones - Instituto Franklin Delano Roosevelt</title>
+    <link rel="stylesheet" href="stylesinstalaciones.css">
+</head>
+<body>
+    <header>
+        <h1>Instituto Franklin Delano Roosevelt</h1>
+        <nav>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Bienvenidos</a></li>
+                <li><a href="bienvenidos.html">Inicio</a></li>
+                <li><a href="ofertas-academicas.html">Ofertas Académicas</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="promocion2024.html">Promoción 2024</a></li>
+                <li class="selected"><a href="instalaciones.html">Instalaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de presentación -->
+        <section class="tarjetas">
+            <div class="tarjeta tarjeta-ancha">
+                <h2 class="titulo-centro">Nuestras Instalaciones</h2>
+                <p>El Instituto Franklin Delano Roosevelt, ubicado en Puerto Cortés, Honduras, cuenta con instalaciones modernas diseñadas para promover un ambiente de aprendizaje integral. Entre sus recursos destacan los laboratorios de informática, equipados con tecnología avanzada, esenciales para los estudiantes de bachillerato en ciencias, letras, computación, y otras carreras técnicas y comerciales que ofrece el instituto.
+
+                    Además, posee aulas cómodas con equipos audiovisuales, esenciales para clases dinámicas, y una biblioteca con acceso a una amplia gama de materiales educativos. En cuanto a las áreas recreativas, el instituto dispone de espacios de esparcimiento para que los estudiantes puedan relajarse y socializar durante los descansos. También cuenta con un gimnasio con equipamiento moderno, promoviendo así el desarrollo físico de sus alumnos.
+                    
+                    Todo esto forma parte del esfuerzo por ofrecer una formación no solo académica, sino también física y técnica, con miras a generar oportunidades laborales para los jóvenes de la región.</p>
+            </div>
+        </section>
+
+        <!-- Galería de instalaciones -->
+        <section class="tarjetas">
+            <div class="tarjeta imagen-centro">
+                <img src="C:\Users\AlexM\Downloads\instituto\imagenes1\colegio1.jpg" alt="Edificio A">
+                <p><strong>Edificio A</strong>: Alberga la administración (dirección, subdirección, secretaría) y aulas de informática...</p>
+            </div>
+            <div class="tarjeta imagen-centro">
+                <img src="C:\Users\AlexM\Downloads\instituto\imagenes1\colegio2.jpg" alt="Edificio B">
+                <p><strong>Edificio B</strong>: Aquí se encuentran los maestros del ciclo básico y se imparten clases de ciencias sociales...</p>
+            </div>
+            <div class="tarjeta imagen-centro">
+                <img src="C:\Users\AlexM\Downloads\instituto\imagenes1\colegio3.jpg" alt="Edificio C">
+                <p><strong>Edificio C</strong>: Dedicado a la educación artística y tecnología textil. Adyacente a este edificio se encuentra el gimnasio.</p>
+            </div>
+            <div class="tarjeta imagen-centro">
+                <img src="C:\Users\AlexM\Downloads\instituto\imagenes1\colegio4.jpg" alt="Edificio D">
+                <p><strong>Edificio D</strong>: Destinado a ciencias naturales con laboratorios y aulas de química, biología y otras ciencias experimentales.</p>
+            </div>
+            <div class="tarjeta imagen-centro">
+                <img src="C:\Users\AlexM\Downloads\instituto\imagenes1\biblio.jpg" alt="Biblioteca">
+                <p><strong>Biblioteca</strong>: La biblioteca del Instituto Franklin Delano Roosevelt en Puerto Cortés, Honduras, es fundamental para el aprendizaje...</p>
+            </div>
+            <div class="tarjeta imagen-centro">
+                <img src="C:\Users\AlexM\Downloads\instituto\campo.jpg" alt="Campo de Fútbol">
+                <p><strong>Campo</strong>: El campo de fútbol del Instituto Franklin Delano Roosevelt es esencial para la práctica deportiva...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Instituto Franklin Delano Roosevelt - Puerto Cortés, Honduras</p>
+    </footer>
+
+    <!-- Script para el menú hamburguesa -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

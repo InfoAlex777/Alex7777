@@ -1,0 +1,135 @@
+/* Estilos generales para el sitio web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+/* Contenido principal */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegación */
+nav {
+    width: 100%;
+    background-color: #333;
+}
+
+/* Estilos del menú */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #444;
+    flex-wrap: wrap;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+.nav-links li.selected a {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Contenedor de las tarjetas */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta {
+    background-color: #f9f9f9;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Limita el tamaño de las imágenes en tarjetas normales */
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Limita la altura en tarjetas normales */
+    border-radius: 5px;
+}
+
+/* Tarjetas anchas siempre ocupan el 100% */
+.tarjeta-ancha {
+    width: 100%;
+}
+
+/* Ajustes de tamaño para tarjetas normales */
+@media (min-width: 1280px) {
+    .tarjeta {
+        flex: 1 1 calc(50% - 10px); /* Dos tarjetas por fila en pantallas grandes */
+    }
+}
+
+/* Tarjetas ocupan 100% de ancho en pantallas menores */
+@media (max-width: 1279px) {
+    .tarjeta {
+        width: 100%;
+    }
+
+    .tarjeta img {
+        max-height: 200px; /* Limita la altura de la imagen en pantallas pequeñas */
+    }
+}
+
+/* Ajustes para el video en dispositivos pequeños */
+.video-responsive {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limita la altura del video en dispositivos pequeños */
+}
